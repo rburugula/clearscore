@@ -16,5 +16,5 @@ to what was expected from this demo.
 this can be expanded to get the actual error responses based on the actual api implementation.
 - I have added an addition button on the UI to refresh the data which will perform an api call. This is only to
 show the data changing when go offline/online on the device (Internet connectivity)
-- I have added kotlinx-coroutines-test for support with running unit tests
+- I have added kotlinx-coroutines-test for support with running unit tests..
 
