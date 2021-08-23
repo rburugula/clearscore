@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreditScoreFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@id/donut_view"
+        app:layout_constraintEnd_toEndOf="@id/donut_view"
+        app:layout_constraintStart_toStartOf="@id/donut_view"
+        app:layout_constraintTop_toTopOf="@id/donut_view">
+
+        <TextView
+            android:id="@+id/yourCreditScore"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/your_credit_score_is"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="score"
+            android:textColor="#FB1D32"
+            android:textSize="100sp" />
+
+        <TextView
+            android:id="@+id/maxScoreValue"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="maxScoreValue"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+    <app.futured.donut.DonutProgressView
+        android:id="@+id/donut_view_over"
+        android:layout_width="400dp"
+        android:layout_height="440dp"
+        app:donut_bgLineColor="@color/black"
+        app:donut_gapAngle="270"
+        app:donut_gapWidth="0"
+        app:donut_strokeWidth="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <app.futured.donut.DonutProgressView
+        android:id="@+id/donut_view"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        app:donut_bgLineColor="@color/white"
+        app:donut_gapAngle="270"
+        app:donut_gapWidth="0"
+        app:donut_strokeWidth="7dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnRefresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Refresh"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
